@@ -30,9 +30,6 @@
 }
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-  h1 {
-    padding-right: +10;
-  }
   body {
     background-color: white;
   }
