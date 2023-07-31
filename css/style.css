@@ -2,19 +2,20 @@ h1 {
   color: red;
   font-style: oblique;
 }
-h2{
+h2 {
   color: blue;
   font-weight: 100;
 }
-h3{
+h3 {
   color: yellow;
   margin-right: 30%;
 }
-h4{
+h4 {
   color: orange;
   font-style: unset;
 }
-h5{
+h5 {
+  padding-right: +10;
   color: green;
   font-weight: 400;
 }
