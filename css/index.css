@@ -1,14 +1,101 @@
-* {
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-.logo > img {
-  width: 50px;
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
+.logo img {
+  width: 80px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border: 1px solid white;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.social_icon {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    font-size: 20px;
+  }
+
+  .menu li {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .product {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
